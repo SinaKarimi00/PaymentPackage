@@ -21,7 +21,10 @@ simple API calls.
 ---
 
 ## ⚙️ Installation
-1. To support **RTL TextMeshPro** in your project, you need to add the following scoped registry to your `manifest.json`:
+
+1. 📦 Clone or download the package from the release section and import it to your project.
+
+2. To support **RTL TextMeshPro** in your project, you need to add the following scoped registry to your `manifest.json`:
 
 ```json
 "scopedRegistries": [
@@ -34,11 +37,6 @@ simple API calls.
   }
 ]
 ```
-
-2. 📦 Clone or download the package from your repository:
-   ```bash
-   git clone https://github.com/your-repo/com.mirka.payment.git
-   ```
 
 3. 🧭 Add the package to your Unity project:
     - Go to **Window → Package Manager**
