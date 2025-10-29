@@ -22,7 +22,7 @@ simple API calls.
 
 ## ⚙️ Installation
 
-1. 📦 Clone or download the package from the release section and import it to your project.
+1. 📦 Clone or download the package from the release section and place the package folder inside your project's Packages folder, next to the manifest.json file.
 
 2. To support **RTL TextMeshPro** in your project, you need to add the following scoped registry to your `manifest.json`:
 
