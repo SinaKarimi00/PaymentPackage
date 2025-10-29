@@ -1,6 +1,8 @@
 ﻿using System;
 using UnityEngine;
+#if MYKET
 using MyketPlugin;
+#endif
 using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
 using Mirka.Payment.Runtime.Script.Tools;
@@ -17,7 +19,7 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
         private Action<Product> _onPurchaseFailed;
 
 
-#if UNITY_EDITOR && !MYKET
+#if !UNITY_EDITOR && MYKET
         public void Initialize()
         {
             var productCollection = PaymentContainer.AllPurchaseButtons;

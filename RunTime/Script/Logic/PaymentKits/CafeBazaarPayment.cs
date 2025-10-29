@@ -22,7 +22,7 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
 
         private void Awake()
         {
-            _payKitConfig = Addressables.LoadAssetAsync<PaymentKitConfig>("CafeBazaarPaymentKitConfig").WaitForCompletion();
+            _payKitConfig = Addressables.LoadAssetAsync<PaymentKitConfig>("CafebazaarPaymentKitConfig").WaitForCompletion();
         }
 
         public async void Initialize()
