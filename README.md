@@ -22,8 +22,8 @@ simple API calls.
 
 ## ⚙️ Installation
 
-1. 📦 Clone or download the package from the release section and place the package folder inside your project's Packages folder, next to the manifest.json file.
-
+1. 📦 Clone or download the package from the release section and place the package folder inside your project's Packages folder, next to the manifest.json file.  <br> 
+    For more information, visit [Release](https://github.com/SinaKarimi00/PaymentPackage/releases).
 2. To support **RTL TextMeshPro** in your project, you need to add the following scoped registry to your `manifest.json`:
 
 ```json
