@@ -21,7 +21,10 @@ simple API calls.
 ---
 
 ## ⚙️ Installation
-1. To support **RTL TextMeshPro** in your project, you need to add the following scoped registry to your `manifest.json`:
+
+1. 📦 Clone or download the package from the release section and place the package folder inside your project's Packages folder, next to the manifest.json file.
+
+2. To support **RTL TextMeshPro** in your project, you need to add the following scoped registry to your `manifest.json`:
 
 ```json
 "scopedRegistries": [
@@ -35,17 +38,7 @@ simple API calls.
 ]
 ```
 
-2. 📦 Clone or download the package from your repository:
-   ```bash
-   git clone https://github.com/your-repo/com.mirka.payment.git
-   ```
-
-3. 🧭 Add the package to your Unity project:
-    - Go to **Window → Package Manager**
-    - Click **Add package from disk...**
-    - Select the `package.json` file inside `com.mirka.payment`
-
-4. 🧰 After importing, Unity will automatically copy the required `.jar` and `.aar` dependencies into your project when
+3. 🧰 After importing, Unity will automatically copy the required `.jar` and `.aar` dependencies into your project when
    you build.
 
 ---
@@ -146,7 +139,7 @@ implementation 'com.github.cafebazaar.Poolakey:poolakey:2.0.0' // Required for C
 
 1. **Create PaymentKitConfigs for both stores**
     - Create a `PaymentKitConfig` for **Myket** and **Cafe Bazaar**.
-    - Name them **`MyketPaymentKitConfig`** and **`CafeBazaarPaymentKitConfig`**.
+    - Name them **`MyketPaymentKitConfig`** and **`CafebazaarPaymentKitConfig`**.
     - Set your market keys in each config.
     - Register them as **local Addressables** and ensure that the Addressable names exactly match the config names.
 
