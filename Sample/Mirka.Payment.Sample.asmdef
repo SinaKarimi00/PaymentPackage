@@ -1,0 +1,17 @@
+{
+    "name": "Mirka.Payment.Sample",
+    "rootNamespace": "Mirka.Payment.Sample",
+    "references": [
+        "GUID:d800fe564ecb2274682fd3fa5e6e58f8",
+        "GUID:1794dc73b435de247b715580a882f325"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
