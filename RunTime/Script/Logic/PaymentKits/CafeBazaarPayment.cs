@@ -59,8 +59,8 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
             foreach (var detail in result.data)
             {
                 var revenuePrice = PriceConvertor.ExtractPriceFromPersianMarkets(detail.price, 10);
-                PaymentContainer.GetProduct(detail.sku).Product.price = revenuePrice;
-                PaymentContainer.GetProduct(detail.sku).UpdatePrice(revenuePrice);
+                PaymentContainer.GetPurchaseButton(detail.sku).Product.price = revenuePrice;
+                PaymentContainer.GetPurchaseButton(detail.sku).UpdatePrice(revenuePrice);
             }
         }
 

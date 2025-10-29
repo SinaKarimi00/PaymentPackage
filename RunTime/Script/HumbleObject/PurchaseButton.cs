@@ -23,7 +23,7 @@ namespace com.mirka.payment.RunTime.Script.HumbleObject
             if (!Application.isPlaying)
                 return;
 #endif
-            PaymentContainer.RegisterProduct(product.id, this);
+            PaymentContainer.RegisterPurchaseButton(product.id, this);
 
             onClick.AddListener(PurchaseProduct);
         }
