@@ -8,7 +8,7 @@ namespace Mirka.Payment.Runtime.Script.Logic
 
     public static class PaymentContainer
     {
-        private static readonly Dictionary<string, PurchaseButton> products = new();
+        private static readonly Dictionary<string, PurchaseButton> purchaseButtons = new();
         private static IPaymentKit _paymentKit;
         private static PaymentWrapper _paymentWrapper;
 
@@ -24,18 +24,18 @@ namespace Mirka.Payment.Runtime.Script.Logic
             set => _paymentWrapper ??= value;
         }
 
-        public static void RegisterProduct(string sku, PurchaseButton product)
+        public static void RegisterPurchaseButton(string sku, PurchaseButton purchaseButton)
         {
             if (IsSkuNull(sku)) return;
 
             IsSkuExist(sku);
 
-            products[sku] = product;
+            purchaseButtons[sku] = purchaseButton;
         }
 
         private static void IsSkuExist(string sku)
         {
-            if (products.ContainsKey(sku))
+            if (purchaseButtons.ContainsKey(sku))
             {
                 Debug.LogWarning($"Product with SKU '{sku}' is already registered. Overwriting it.");
             }
@@ -52,12 +52,12 @@ namespace Mirka.Payment.Runtime.Script.Logic
             return false;
         }
 
-        public static PurchaseButton GetProduct(string sku)
+        public static PurchaseButton GetPurchaseButton(string sku)
         {
-            products.TryGetValue(sku, out var product);
-            return product;
+            purchaseButtons.TryGetValue(sku, out var purchaseButton);
+            return purchaseButton;
         }
 
-        public static IReadOnlyDictionary<string, PurchaseButton> AllPurchaseButtons => products;
+        public static IReadOnlyDictionary<string, PurchaseButton> AllPurchaseButtons => purchaseButtons;
     }
 }

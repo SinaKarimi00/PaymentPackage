@@ -71,8 +71,8 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
                 Debug.Log(convertedPrice + " : converted ***");
                 Debug.Log(sku.ProductId + " : product id");
 
-                PaymentContainer.GetProduct(sku.ProductId).Product.price = convertedPrice;
-                PaymentContainer.GetProduct(sku.ProductId).UpdatePrice(convertedPrice);
+                PaymentContainer.GetPurchaseButton(sku.ProductId).Product.price = convertedPrice;
+                PaymentContainer.GetPurchaseButton(sku.ProductId).UpdatePrice(convertedPrice);
             }
         }
 
@@ -85,7 +85,7 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
         {
             var id = product.ProductId;
 
-            var price = PaymentContainer.GetProduct(id).Product.price;
+            var price = PaymentContainer.GetPurchaseButton(id).Product.price;
             price = price.Replace(",", "");
             var exactRevenue = float.Parse(price);
 
