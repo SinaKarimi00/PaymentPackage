@@ -1,0 +1,29 @@
+{
+  "name": "com.mirka.payment",
+  "displayName": "MirkaPayment",
+  "version": "0.1.0",
+  "unity": "2021.3",
+  "description": "A payment system for Unity projects developed by Sina Karimi.",
+  "author": {
+    "name": "Sina Karimi"
+  },
+  "keywords": [
+    "payment",
+    "shop",
+    "iap"
+  ],
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.addressables": "1.19.19",
+    "com.nosuchstudio.rtltmpro": "3.4.5"
+  },
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.nosuchstudio"
+      ]
+    }
+  ]
+}
