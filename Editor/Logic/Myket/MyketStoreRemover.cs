@@ -28,7 +28,7 @@ namespace Mirka.Payment.Editor.Editor.Logic.Myket
 
         private static void HideMyketFiles()
         {
-            FileTools.SetFileHidden("Assets/MyketIAB", true);
+            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.2/Packages/MyketIAB", true);
             FileTools.SetFileHidden("Assets/Plugins/Android/MyketIAB.jar", true);
         }
     }
