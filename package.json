@@ -11,19 +11,5 @@
     "payment",
     "shop",
     "iap"
-  ],
-  "dependencies": {
-    "com.unity.textmeshpro": "3.0.6",
-    "com.unity.addressables": "1.19.19",
-    "com.nosuchstudio.rtltmpro": "3.4.5"
-  },
-  "scopedRegistries": [
-    {
-      "name": "OpenUPM",
-      "url": "https://package.openupm.com",
-      "scopes": [
-        "com.nosuchstudio"
-      ]
-    }
   ]
 }

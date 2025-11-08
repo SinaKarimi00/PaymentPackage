@@ -43,7 +43,7 @@ namespace Mirka.Payment.Editor
 
         private static void UnhideCafebazaarFiles()
         {
-            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.7/Packages/.Bazaar", false);
+            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.8/Packages/.Bazaar", false);
         }
     }
 }
