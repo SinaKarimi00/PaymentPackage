@@ -24,12 +24,14 @@ namespace Mirka.Payment.Editor.Editor.Logic.Myket
                 true);
             FileTools.ToggleXmlCommentByKeyword("Assets/Plugins/Android/AndroidManifest.xml",
                 "ir.mservices.market.BILLING", true);
+            FileTools.ToggleXmlCommentByKeyword("Assets/Plugins/Android/AndroidManifest.xml",
+                "com.myket.MyketIABProxyActivity", true);
         }
 
         private static void HideMyketFiles()
         {
-            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.6/Packages/MyketIAB", true);
-            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.6/Plugins/Android/MyketIAB.jar", true);
+            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.7/Packages/MyketIAB", true);
+            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.7/Plugins/Android/MyketIAB.jar", true);
         }
     }
 }
