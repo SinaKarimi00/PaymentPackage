@@ -9,4 +9,5 @@
 | 0.1.4   | 2025-10-29 | Choose a better name for variables                                          |
 | 0.1.5   | 2025-11-01 | Edit file addresses                                                         |
 | 0.1.6   | 2025-11-01 | Edit Cafe and myket applier                                                 |
-| 0.1.7   | 2025-11-08 | BugFix assembly references                                                   |
+| 0.1.7   | 2025-11-08 | BugFix assembly references                                                  |
+| 0.1.8   | 2025-11-08 | BugFix package dependencies (rtl text mesh pro), Document completed         |
