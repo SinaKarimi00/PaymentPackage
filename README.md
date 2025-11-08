@@ -63,6 +63,14 @@ To enable in-app billing for **Myket** 🛍️ and **Cafe Bazaar** ☕, follow t
 
 Add the following lines to your `AndroidManifest.xml` file:
 
+#### 🔹 Activity
+
+```xml
+
+<activity android:name="com.myket.MyketIABProxyActivity"
+          android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+```
 #### 🔹 Permissions
 
 ```xml
