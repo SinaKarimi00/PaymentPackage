@@ -21,7 +21,7 @@ namespace Mirka.Payment.Editor.Logic.Cafebazzar
 
         private static void HideCafebazaarFiles()
         {
-            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.8/Packages/Bazaar", true);
+            FileTools.SetFileHidden("Packages/PaymentPackage-0.1.9/Packages/Bazaar", true);
         }
     }
 }
