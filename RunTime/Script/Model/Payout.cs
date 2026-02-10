@@ -7,5 +7,11 @@ namespace Mirka.Payment.Runtime.Script.Logic
     {
         public string subtype;
         public int quantity;
+
+        public Payout(string subtype, int quantity)
+        {
+            this.subtype = subtype;
+            this.quantity = quantity;
+        }
     }
 }
