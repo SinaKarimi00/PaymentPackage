@@ -11,5 +11,18 @@ namespace Mirka.Payment.Runtime.Script.Logic
         public List<Payout> payouts;
         public ProductType productType;
         public string price;
+        
+        public Product(string id, bool isConsumable, List<Payout> payouts, ProductType productType, string price)
+        {
+            this.id = id;
+            this.isConsumable = isConsumable;
+            this.payouts = payouts;
+            this.productType = productType;
+            this.price = price;
+        }
+        public Product()
+        {
+        }
+
     }
 }

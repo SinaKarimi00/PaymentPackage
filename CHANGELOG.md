@@ -11,3 +11,4 @@
 | 0.1.6   | 2025-11-01 | Edit Cafe and myket applier                                                 |
 | 0.1.7   | 2025-11-08 | BugFix assembly references                                                  |
 | 0.1.8   | 2025-11-08 | BugFix package dependencies (rtl text mesh pro), Document completed         |
+| 0.1.9   | 2026-02-10 | Removed Addressables dependency; fixed multi-scene issues                   |
