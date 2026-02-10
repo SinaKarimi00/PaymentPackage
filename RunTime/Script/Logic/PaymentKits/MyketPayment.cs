@@ -20,8 +20,9 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
 
 
 #if !UNITY_EDITOR && MYKET
-        public void Initialize()
+        public async void Initialize(PaymentKitConfig payment)
         {
+            _payKitConfig = payment;
             var productCollection = PaymentContainer.AllPurchaseButtons;
             foreach (var keyValuePair in productCollection)
                 _allSku.Add(keyValuePair.Key);
@@ -123,7 +124,7 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
         }
 
 #else
-        public void Initialize()
+        public async void Initialize(PaymentKitConfig payment)
         {
         }
 

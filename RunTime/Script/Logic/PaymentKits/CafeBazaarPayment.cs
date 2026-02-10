@@ -20,13 +20,9 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
         private readonly List<string> _allSku = new();
         private PaymentKitConfig _payKitConfig;
 
-        private void Awake()
+        public async void Initialize(PaymentKitConfig payment)
         {
-            _payKitConfig = Addressables.LoadAssetAsync<PaymentKitConfig>("CafebazaarPaymentKitConfig").WaitForCompletion();
-        }
-
-        public async void Initialize()
-        {
+            _payKitConfig = payment;
             Debug.Log("Try CafeBazaarPayKit initialized");
             try
             {
@@ -103,7 +99,7 @@ namespace Mirka.Payment.Runtime.Script.Logic.PaymentKits
             // Addressables.Release(_payKitConfig);
         }
 #else
-        public void Initialize()
+        public async void Initialize(PaymentKitConfig payment)
         {
         }
 
