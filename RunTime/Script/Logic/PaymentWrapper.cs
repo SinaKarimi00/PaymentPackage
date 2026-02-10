@@ -16,17 +16,21 @@ namespace Mirka.Payment.Runtime.Script.Logic
             PaymentContainer.PaymentWrapper = this;
         }
 
-        private void Start()
+        private async void Start()
         {
+            PaymentKitConfig paymentConfig;
 #if MYKET
+            paymentConfig = myket;
             _paymentKit = gameObject.AddComponent<MyketPayment>(); // Correct instantiation for MyketPayKit
 #elif CAFEBAZAAR
+            paymentConfig = cafe;
             _paymentKit = gameObject.AddComponent<CafeBazaarPayment>(); // Correct instantiation for CafeBazaarPayKit
 #endif
 #if !UNITY_EDITOR
-            _paymentKit.Initialize();
+            _paymentKit.Initialize(paymentConfig);
 #endif
         }
+
 
         public void PurchaseProduct(Product product)
         {
