@@ -18,11 +18,8 @@ namespace Mirka.Payment.Runtime.Script.Logic
             set => _paymentKit ??= value;
         }
 
-        public static PaymentWrapper PaymentWrapper
-        {
-            get => _paymentWrapper;
-            set => _paymentWrapper ??= value;
-        }
+        public static PaymentWrapper PaymentWrapper;
+
 
         public static void RegisterPurchaseButton(string sku, PurchaseButton purchaseButton)
         {
